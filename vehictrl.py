@@ -81,6 +81,50 @@ def moveRight():
     GPIO.output(MOTOR_RB_IN2, GPIO.HIGH)
     pass
 
+def moveForeLeft():
+    GPIO.output(MOTOR_LF_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_LF_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_LB_IN1, GPIO.HIGH)
+    GPIO.output(MOTOR_LB_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_RF_IN1, GPIO.HIGH)
+    GPIO.output(MOTOR_RF_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_RB_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_RB_IN2, GPIO.LOW)
+    pass
+
+def moveForeRight():
+    GPIO.output(MOTOR_LF_IN1, GPIO.HIGH)
+    GPIO.output(MOTOR_LF_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_LB_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_LB_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_RF_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_RF_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_RB_IN1, GPIO.HIGH)
+    GPIO.output(MOTOR_RB_IN2, GPIO.LOW)
+    pass
+
+def moveBackLeft():
+    GPIO.output(MOTOR_LF_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_LF_IN2, GPIO.HIGH)
+    GPIO.output(MOTOR_LB_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_LB_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_RF_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_RF_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_RB_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_RB_IN2, GPIO.HIGH)
+    pass
+
+def moveBackRight():
+    GPIO.output(MOTOR_LF_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_LF_IN2, GPIO.LOW)
+    GPIO.output(MOTOR_LB_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_LB_IN2, GPIO.HIGH)
+    GPIO.output(MOTOR_RF_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_RF_IN2, GPIO.HIGH)
+    GPIO.output(MOTOR_RB_IN1, GPIO.LOW)
+    GPIO.output(MOTOR_RB_IN2, GPIO.LOW)
+    pass
+
 def turnLeft():
     GPIO.output(MOTOR_LF_IN1, GPIO.LOW)
     GPIO.output(MOTOR_LF_IN2, GPIO.HIGH)
